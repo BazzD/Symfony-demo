@@ -1,0 +1,17 @@
+{% extends '::base.html.twig' %}
+{% block title %}Post bewerken{% endblock %}
+
+{% block body -%}
+    <h1>Post edit</h1>
+
+    {{ form(edit_form) }}
+
+        <ul class="list-group record_actions">
+    <li class="list-group-item">
+        <a href="{{ path('post') }}">
+            Back to the list
+        </a>
+    </li>
+    <li class="list-group-item">{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

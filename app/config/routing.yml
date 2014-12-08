@@ -1,0 +1,8 @@
+bazzd_blog:
+    resource: "@BazzdBlogBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+
+
+

@@ -1,0 +1,16 @@
+{% extends '::base.html.twig' %}
+{% block title %}Nieuwe Author aanmaken{% endblock %}
+
+{% block body -%}
+    <h1>Nieuwe author aanmaken</h1>
+
+    {{ form(form) }}
+
+        <ul class="list-group record_actions">
+    <li class="list-group-item">
+        <a href="{{ path('author') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}

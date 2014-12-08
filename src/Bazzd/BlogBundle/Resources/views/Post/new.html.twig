@@ -1,0 +1,17 @@
+{% extends '::base.html.twig' %}
+{% block title %}Nieuwe post aanmaken{% endblock %}
+
+
+{% block body -%}
+    <h1>Nieuwe post aanmaken</h1>
+
+    {{ form(form) }}
+
+        <ul class="list-group record_actions">
+    <li class="list-group-item">
+        <a href="{{ path('post') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}
